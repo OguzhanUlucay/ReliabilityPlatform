@@ -1,5 +1,6 @@
 C:\Users\Berkay\source\repos\Web\PresentationLayer\EntityLayer\bin\Debug\EntityLayer.dll
 C:\Users\Berkay\source\repos\Web\PresentationLayer\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\Berkay\source\repos\Web\PresentationLayer\EntityLayer\obj\Debug\EntityLayer.csprojResolveAssemblyReference.cache
 C:\Users\Berkay\source\repos\Web\PresentationLayer\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
 C:\Users\Berkay\source\repos\Web\PresentationLayer\EntityLayer\obj\Debug\EntityLayer.dll
 C:\Users\Berkay\source\repos\Web\PresentationLayer\EntityLayer\obj\Debug\EntityLayer.pdb
