@@ -130,10 +130,9 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Contact.aspx" />
-    <Content Include="Content\bootstrap-def.css" />
+    <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\EnterpriseUser.css" />
-    <Content Include="Content\bootstrap.css" />
     <Content Include="Default.aspx" />
     <Content Include="EnterpriseUser.aspx" />
     <Content Include="favicon.ico" />
