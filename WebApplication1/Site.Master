@@ -57,6 +57,7 @@
                     <ul class="nav navbar-nav">
                         <li><a runat="server" href="~/">Main Menu</a></li>
                         <li><a runat="server" href="~/RegisterUser">User Register</a></li>
+                        <li><a runat="server" href="~/EnterpriseUser">Enterprise User</a></li>
                         <li><a runat="server" href="~/AdminPanel">User List</a></li>
 
                     </ul>
