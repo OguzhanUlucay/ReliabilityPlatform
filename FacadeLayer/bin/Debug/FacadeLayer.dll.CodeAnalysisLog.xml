@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio\2017\community\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer\bin\Debug\FacadeLayer.dll">
+   <Modules>
+    <Module Name="facadelayer.dll">
+     <Namespaces>
+      <Namespace Name="FacadeLayer">
+       <Types>
+        <Type Name="FUser" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#Insert(EntityLayer.EUser)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="SQL sorgularını güvenlik açıkları için inceleyin" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2017-12-07 20:35:52Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer" File="FUser.cs" Line="31">'FUser.Insert(EUser)' içinde 'MySqlCommand.MySqlCommand(string, MySqlConnection)' içine geçirilen sorgu dizesi 'user.name', 'user.surname', 'user.ssn', 'user.phone', 'user.email', 'user.birthdate' değişkenlerini içerebilir. Eğer bu değişkenlerin herhangi biri kullanıcı girişinden geliyorsa, sorguyu dize birleştirmeleri kullanarak oluşturmak yerine bir saklı yordam ya da bir parametreleştirilmiş SQL sorgusu kullanmayı göz önüne alın.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="SQL sorgularını güvenlik açıkları için inceleyin" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>SQL sorgularını güvenlik açıkları için inceleyin</Name>
+   <Description>Kullanıcı girişi ile oluşan SQL komut dizesi, SQL injection saldırılarına karşı savunmasız durumdadır. Microsoft SQL Server ve diğer veritabanı sunucuları ekleme saldırısı riskini azaltan saklı yordamları ve parametrelenmiş SQL sorgularını destekler.</Description>
+   <Resolution Name="WithNonLiterals">{1} içinde {0} içine geçirilen sorgu dizesi {2} değişkenlerini içerebilir. Eğer bu değişkenlerin herhangi biri kullanıcı girişinden geliyorsa, sorguyu dize birleştirmeleri kullanarak oluşturmak yerine bir saklı yordam ya da bir parametreleştirilmiş SQL sorgusu kullanmayı göz önüne alın.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310.aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Kategori</String>
+  <String Key="Certainty">Kesinlik</String>
+  <String Key="CollapseAll">Tümünü Daralt</String>
+  <String Key="CheckId">Kimliği Denetle</String>
+  <String Key="Error">Hata</String>
+  <String Key="Errors">hata(lar)</String>
+  <String Key="ExpandAll">Tümünü Genişlet</String>
+  <String Key="Help">Yardım</String>
+  <String Key="Line">Çizgi</String>
+  <String Key="Messages">ileti(ler)</String>
+  <String Key="LocationNotStoredInPdb">[Konum Pdb içinde saklanmıyorl]</String>
+  <String Key="Project">Proje</String>
+  <String Key="Resolution">Çözünürlük</String>
+  <String Key="Rule">Kural</String>
+  <String Key="RuleFile">Kural Dosyası</String>
+  <String Key="RuleDescription">Kural Açıklaması</String>
+  <String Key="Source">Kaynak</String>
+  <String Key="Status">Durum</String>
+  <String Key="Target">Hedef</String>
+  <String Key="Warning">Uyarı</String>
+  <String Key="Warnings">uyarı(lar)</String>
+  <String Key="ReportTitle">Kod Analizi Raporu</String>
+ </Localized>
+</FxCopReport>

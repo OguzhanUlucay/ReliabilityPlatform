@@ -1,5 +1,7 @@
 C:\Users\Berkay\source\repos\Web\PresentationLayer\BLL\bin\Debug\BLL.dll
 C:\Users\Berkay\source\repos\Web\PresentationLayer\BLL\bin\Debug\BLL.pdb
+C:\Users\Berkay\source\repos\Web\PresentationLayer\BLL\bin\Debug\BLL.dll.CodeAnalysisLog.xml
+C:\Users\Berkay\source\repos\Web\PresentationLayer\BLL\bin\Debug\BLL.dll.lastcodeanalysissucceeded
 C:\Users\Berkay\source\repos\Web\PresentationLayer\BLL\bin\Debug\EntityLayer.dll
 C:\Users\Berkay\source\repos\Web\PresentationLayer\BLL\bin\Debug\FacadeLayer.dll
 C:\Users\Berkay\source\repos\Web\PresentationLayer\BLL\bin\Debug\MySql.Data.dll

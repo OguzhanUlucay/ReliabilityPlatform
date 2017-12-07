@@ -18,4 +18,8 @@ namespace EntityLayer
         public string birthdate { get; set; }
 
     }
+    public class EnterpriseUser
+    {
+
+    }
 }
