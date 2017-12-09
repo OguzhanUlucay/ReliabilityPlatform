@@ -6,13 +6,14 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 
-    public partial class HomePage : System.Web.UI.Page
+    public partial class Logout : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        if (Session["email"] != null)
-        {
+        Session["email"] = null;
 
+        Session.Clear();
+        Session.RemoveAll();
+        Response.Redirect("Login.aspx");
         }
-    }
     }

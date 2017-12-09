@@ -34,6 +34,7 @@
 
                   }
                </script>
+    <div class="jumbotron">
 
                   <div class="row form-group">
             <label class="col-md-2 control-label" for="registration_type">Registration Type</label>
@@ -317,6 +318,7 @@
   </div>
 </div>
 
+                  </div>
 
     </form>
 

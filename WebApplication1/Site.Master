@@ -16,7 +16,7 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-    <body background="https://newevolutiondesigns.com/images/freebies/white-wallpaper-8.jpg">
+    <body background="http://4hdwallpapers.com/wp-content/uploads/2013/03/California-Mountain.jpg">
 
     <form runat="server">
         <asp:ScriptManager runat="server">
