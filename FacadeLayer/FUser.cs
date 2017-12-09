@@ -60,6 +60,18 @@ namespace FacadeLayer
             Connection.Con.Close();
 
         }
+        public static void InsertLogin(UserLogin user)
+        {
+            string sqlQuery = "INSERT INTO userdata (email,password) VALUES('" + user.email + "','" + user.password  +"')";
+            MySqlCommand cmd = new MySqlCommand(sqlQuery, Connection.Con);
+            if (Connection.Con.State == ConnectionState.Closed)
+            {
+                Connection.Con.Open();
+            }
+            cmd.ExecuteNonQuery();
+            Connection.Con.Close();
+
+        }
 
     }
 }

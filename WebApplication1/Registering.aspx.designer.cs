@@ -38,6 +38,9 @@ public partial class Registering {
     /// </remarks>
     /// 
     protected global::System.Web.UI.WebControls.TextBox TextBoxUserSSN;
+
+    protected global::System.Web.UI.WebControls.TextBox TextBoxPassword;
+
     
     /// <summary>
     /// LabelWarning denetimi.

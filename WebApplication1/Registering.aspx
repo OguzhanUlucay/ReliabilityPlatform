@@ -133,7 +133,8 @@
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon-user"></i>
 			</span>
-                <input type="password" name="psw">
+                     <asp:TextBox ID="TextBoxPassword" type="password" runat="server"></asp:TextBox>
+
             </div>
                  
             </div>

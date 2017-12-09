@@ -70,6 +70,14 @@ namespace BLL
             FUser.InsertEnterpriseAdress(user);
             return "";
         }
+        public static string Login(UserLogin user)
+        {
+            //validations will add
+
+            FUser.InsertLogin(user);
+            return "";
+
+        }
 
     }
 }
