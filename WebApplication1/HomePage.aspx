@@ -5,7 +5,7 @@
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
-    <body background="https://newevolutiondesigns.com/images/freebies/white-wallpaper-8.jpg">
+    <body background="http://4hdwallpapers.com/wp-content/uploads/2013/03/California-Mountain.jpg">
 
  <form runat="server">
         <asp:ScriptManager runat="server">
@@ -39,26 +39,26 @@
                         <span class="icon-bar"></span>
 
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Reliability Platform</a>
+                    <a class="navbar-brand" runat="server" href="~/HomePage">Reliability Platform</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Main Menu</a></li>
                         <li><a runat="server" href="~/AdminPanel">User List</a></li>
                     </ul>
-
+                      <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/AdminPanel">Reviews</a></li>
+                    </ul>
                        
 
-                      <ul class="nav navbar-nav pull-right">
-                        <li><a runat="server" href="~/Registering">Register Now !</a></li>
-
-                        </ul>
+                      
                     <ul class="nav navbar-nav pull-right">
-                        <li><a runat="server" href="~/Login">Logout </a></li>
+                        <li><a runat="server" href="~/">Logout </a></li>
 
                         </ul>
 
                 </div>
             </div>
         </div>
+
+
      </form>

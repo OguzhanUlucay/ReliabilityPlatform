@@ -5,8 +5,9 @@
     <div class="jumbotron">
         <h3>RELIABILITY PLATFORM </h3>
         <p class="lead">Reliability platform is basically review and ratings site. Member Customer and seller that leagally completed a trade can review and rate each other.</p>
-        <p><a href="/RegisterUser" class="btn btn-primary btn-lg">Sign up and see all reviews  &raquo;</a></p>
+        <p><a href="/Registering" class="btn btn-primary btn-lg">Sign up and see all reviews  &raquo;</a></p>
     </div>
+        <div class="jumbotron ">
 
     <div class="row">
         <div class="col-md-4">
@@ -15,7 +16,7 @@
                 For this evaluation of each other both side have to upload a legal document which will be entered verification process on the platform and evaluated by the algorithm.
             </p>
             <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Sign Up Now !  &raquo;</a>
+                <a href="/Registering" class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Sign Up Now !  &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
@@ -37,5 +38,6 @@
             </p>
         </div>
     </div>
+                </div>
 
 </asp:Content>
