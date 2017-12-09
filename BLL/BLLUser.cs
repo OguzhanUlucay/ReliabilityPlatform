@@ -55,5 +55,29 @@ namespace BLL
             return ""; //return error array.
 
         }
+        public static string InsertEnterprise(EnterpriseUser user)
+        {
+            //validations will add
+
+            FUser.InsertEnterprise(user);
+            return "";
+        }
+        public static string InsertEnterpriseAdress(EnterpriseUserAdress user)
+        {
+            //validations will add
+
+
+            FUser.InsertEnterpriseAdress(user);
+            return "";
+        }
+        public static string Login(UserLogin user)
+        {
+            //validations will add
+
+            FUser.InsertLogin(user);
+            return "";
+
+        }
+
     }
 }

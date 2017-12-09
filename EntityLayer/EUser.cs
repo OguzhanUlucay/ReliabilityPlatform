@@ -18,4 +18,31 @@ namespace EntityLayer
         public string birthdate { get; set; }
 
     }
+    public class EnterpriseUser
+    {
+        public int info_id { get; set; }
+        public int adress_id { get; set; }
+        public string tax_no { get; set; }
+        public string corporation_title { get; set; }
+
+    }
+    public class EnterpriseUserAdress
+    {
+        public int adress_id { get; set; }
+        public string city { get; set; }
+        public string district { get; set; }
+        public string neighbourhood { get; set; }
+        public string building_name { get; set; }
+        public string zip_code { get; set; }
+
+
+    }
+    public class UserLogin
+    {
+       
+        public string email { get; set; }
+        public string password { get; set; }
+
+
+    }
 }

@@ -36,6 +36,42 @@ namespace FacadeLayer
             cmd.ExecuteNonQuery();
             Connection.Con.Close();
         }
+        public static void InsertEnterprise(EnterpriseUser user)
+        {
+            string sqlQuery = "INSERT INTO enterprise_info (info_id,adress_id,tax_no,corporation_title) VALUES('" + user.info_id + "','" + user.adress_id + "','" + user.tax_no + "','" + user.corporation_title +"')";
+            MySqlCommand cmd = new MySqlCommand(sqlQuery, Connection.Con);
+            if (Connection.Con.State == ConnectionState.Closed)
+            {
+                Connection.Con.Open();
+            }
+            cmd.ExecuteNonQuery();
+            Connection.Con.Close();
+            
+        }
+        public static void InsertEnterpriseAdress(EnterpriseUserAdress user)
+        {
+            string sqlQuery = "INSERT INTO adress (adress_id,city,district,neighbourhood,building_name,zip_code) VALUES('" + user.adress_id + "','" + user.city + "','" + user.district + "','" + user.neighbourhood +  "','" + user.building_name + "','" + user.zip_code +"')";
+            MySqlCommand cmd = new MySqlCommand(sqlQuery, Connection.Con);
+            if (Connection.Con.State == ConnectionState.Closed)
+            {
+                Connection.Con.Open();
+            }
+            cmd.ExecuteNonQuery();
+            Connection.Con.Close();
+
+        }
+        public static void InsertLogin(UserLogin user)
+        {
+            string sqlQuery = "INSERT INTO userdata (email,password) VALUES('" + user.email + "','" + user.password  +"')";
+            MySqlCommand cmd = new MySqlCommand(sqlQuery, Connection.Con);
+            if (Connection.Con.State == ConnectionState.Closed)
+            {
+                Connection.Con.Open();
+            }
+            cmd.ExecuteNonQuery();
+            Connection.Con.Close();
+
+        }
 
     }
 }

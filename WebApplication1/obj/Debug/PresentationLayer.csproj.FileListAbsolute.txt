@@ -1,3 +1,5 @@
+C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
+C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
 C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\bin\ApplicationInsights.config
 C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\bin\WebApplication1.dll.config
 C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\bin\WebApplication1.dll
@@ -41,7 +43,5 @@ C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\bin\Microsoft
 C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\bin\FacadeLayer.pdb
 C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\bin\tr\System.Web.Optimization.resources.dll
 C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\bin\tr\Microsoft.AspNet.FriendlyUrls.resources.dll
-C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\obj\Debug\PresentationLayer.csprojResolveAssemblyReference.cache
-C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
 C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\obj\Debug\WebApplication1.dll
 C:\Users\Berkay\source\repos\Web\PresentationLayer\WebApplication1\obj\Debug\WebApplication1.pdb
