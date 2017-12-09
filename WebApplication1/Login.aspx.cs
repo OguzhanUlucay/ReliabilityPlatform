@@ -35,7 +35,7 @@ public partial class Login : System.Web.UI.Page
         foreach (DataRow dr in dt.Rows)
         {
             Session["email"] = TextBoxEmail.Text;
-            Response.Redirect("http://localhost:51589/");
+            Response.Redirect("http://localhost:51589");
         }
         if (dt.Rows.Count > 0)
         {
