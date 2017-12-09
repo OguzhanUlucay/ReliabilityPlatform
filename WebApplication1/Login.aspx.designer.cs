@@ -7,7 +7,7 @@
 // </otomatik üretildi>
 //------------------------------------------------------------------------------
 
-namespace WebApplication1 {
+
     
     
     public partial class Login {
@@ -22,6 +22,26 @@ namespace WebApplication1 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         protected global::System.Web.UI.WebControls.TextBox TextBoxEmail;
         protected global::System.Web.UI.WebControls.TextBox TextBoxPassword;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
-    }
+
+    /// <summary>
+    /// form1 denetimi.
+    /// </summary>
+    /// <remarks>
+    /// Otomatik üretilmiş alan.
+    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+    /// </remarks>
+
+
+    /// <summary>
+    /// form1 denetimi.
+    /// </summary>
+    /// <remarks>
+    /// Otomatik üretilmiş alan.
+    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+    /// </remarks>
+
+
+
 }
