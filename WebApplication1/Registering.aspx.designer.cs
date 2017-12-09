@@ -36,6 +36,7 @@ public partial class Registering {
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
+    /// 
     protected global::System.Web.UI.WebControls.TextBox TextBoxUserSSN;
     
     /// <summary>
@@ -73,7 +74,7 @@ public partial class Registering {
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
     protected global::System.Web.UI.WebControls.TextBox TextBoxEmail;
-    
+
     /// <summary>
     /// ButtonADD denetimi.
     /// </summary>
@@ -81,5 +82,19 @@ public partial class Registering {
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
+    /// 
+    protected global::System.Web.UI.WebControls.TextBox TextBoxCorporationTitle;
+    protected global::System.Web.UI.WebControls.TextBox TextBoxTaxNumber;
+
+    protected global::System.Web.UI.WebControls.TextBox TextBoxCity;
+    protected global::System.Web.UI.WebControls.TextBox TextBoxBuildingName;
+    protected global::System.Web.UI.WebControls.TextBox TextBoxDistrict;
+    protected global::System.Web.UI.WebControls.TextBox TextBoxNeighbourhood;
+    protected global::System.Web.UI.WebControls.TextBox TextBoxZipCode;
+
+
+
+
+
     protected global::System.Web.UI.WebControls.Button ButtonADD;
 }

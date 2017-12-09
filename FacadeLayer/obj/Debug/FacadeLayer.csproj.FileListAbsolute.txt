@@ -1,7 +1,5 @@
 C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer\bin\Debug\FacadeLayer.dll
 C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer\bin\Debug\FacadeLayer.pdb
-C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer\bin\Debug\FacadeLayer.dll.CodeAnalysisLog.xml
-C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer\bin\Debug\FacadeLayer.dll.lastcodeanalysissucceeded
 C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer\bin\Debug\EntityLayer.dll
 C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer\bin\Debug\MySql.Data.dll
 C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer\bin\Debug\EntityLayer.pdb
