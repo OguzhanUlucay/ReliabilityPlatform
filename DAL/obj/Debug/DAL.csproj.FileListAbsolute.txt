@@ -1,7 +1,0 @@
-C:\Users\Berkay\source\repos\Web\PresentationLayer\DAL\bin\Debug\DAL.dll
-C:\Users\Berkay\source\repos\Web\PresentationLayer\DAL\bin\Debug\DAL.pdb
-C:\Users\Berkay\source\repos\Web\PresentationLayer\DAL\bin\Debug\DAL.dll.CodeAnalysisLog.xml
-C:\Users\Berkay\source\repos\Web\PresentationLayer\DAL\bin\Debug\DAL.dll.lastcodeanalysissucceeded
-C:\Users\Berkay\source\repos\Web\PresentationLayer\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
-C:\Users\Berkay\source\repos\Web\PresentationLayer\DAL\obj\Debug\DAL.dll
-C:\Users\Berkay\source\repos\Web\PresentationLayer\DAL\obj\Debug\DAL.pdb
