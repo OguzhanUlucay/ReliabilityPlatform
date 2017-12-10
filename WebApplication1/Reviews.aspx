@@ -1,24 +1,10 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication1.SiteMaster" %>
-
-<!DOCTYPE html>
-
-<html lang="tr">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Uygulaması</title>
-
- <asp:ContentPlaceHolder ID="HeadContent" runat="server">
-    </asp:ContentPlaceHolder>
-
-    <webopt:bundlereference runat="server" path="~/Content/css" />
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reviews.aspx.cs" Inherits="Reviews" %>
+ <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
 </head>
-    <body background="http://4hdwallpapers.com/wp-content/uploads/2013/03/California-Mountain.jpg">
+    <body background="https://wallpaperscraft.com/image/black_background_pattern_light_texture_55291_1920x1080.jpg">
 
-    <form runat="server">
+ <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--ScriptManager'da betik paketleme hakkında daha fazla bilgi için bkz. https://go.microsoft.com/fwlink/?LinkID=301884 --%>
@@ -39,8 +25,7 @@
                 <%--Site Betikleri--%>
             </Scripts>
         </asp:ScriptManager>
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -51,37 +36,31 @@
                         <span class="icon-bar"></span>
 
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">Reliability Platform</a>
+                    <a class="navbar-brand" runat="server" href="~/HomePage">Reliability Platform</a>
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Main Menu</a></li>
-                        <li><a runat="server" href="~/AdminPanel">User List</a></li>
-                    </ul>
+                   
+                    
+                      <ul class="nav navbar-nav">
 
-                       
+                          <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reviews
+                        <span class="caret"></span></a>
+                         <ul class="dropdown-menu">
+                         <li><a href="Categories.aspx">Search Reviews by Categories</a></li>
+                          <li><a href="Reviews.aspx">Add a new Review.</a></li>
+                          <li><a href="#">Trusted Sellers</a></li>
+                          </ul>
+                                          </ul>
 
-                      <ul class="nav navbar-nav pull-right">
-                        <li><a runat="server" href="~/Registering">Register Now !</a></li>
-
-                        </ul>
                     <ul class="nav navbar-nav pull-right">
-                        <li><a runat="server" href="~/Login">Login </a></li>
+                        <li><a runat="server" href="~/Logout">Logout </a></li>
 
                         </ul>
+
 
                 </div>
             </div>
         </div>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> </p>
-            </footer>
-        </div>
 
-    </form>
-</body>
-</html>
+     </form>
