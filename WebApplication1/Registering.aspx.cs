@@ -17,7 +17,7 @@ public partial class Registering : System.Web.UI.Page
          protected void ADD_NormalUser(object sender, EventArgs e)
         {
         //password ve email ,ayrıca yeni bir user_login tablosu olusturalarak oraya atılacak. 
-        LabelWarning.Text = BLLUser.Insert(new EUser { info_id = 1, name = TextBoxUserName.Text, surname = TextBoxUserSurname.Text, ssn = TextBoxUserSSN.Text, birthdate = Convert.ToString(TextBoxUserBirthDate.Text), phone = TextBoxUserPhone.Text, email = TextBoxEmail.Text });
+        LabelWarning.Text = BLLUser.Insert(new EUser { name = TextBoxUserName.Text, surname = TextBoxUserSurname.Text, ssn = TextBoxUserSSN.Text, birthdate = Convert.ToString(TextBoxUserBirthDate.Text), phone = TextBoxUserPhone.Text, email = TextBoxEmail.Text });
         LabelWarning.Text=BLLUser.Login(new UserLogin  { email=TextBoxEmail.Text,password=TextBoxPassword.Text });
     }
          protected void ADD_EnterpriseUser(object sender, EventArgs e)
