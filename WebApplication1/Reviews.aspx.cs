@@ -12,4 +12,8 @@ using System.Web.UI.WebControls;
         {
 
         }
+    protected void Review_Submit(object sender, EventArgs e)
+    {
+      //tekrar bak. http object requestle textaredaki inputu alma.->  string a=Request.Form["inputName"];
     }
+}
