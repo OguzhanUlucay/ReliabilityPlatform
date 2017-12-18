@@ -62,7 +62,7 @@ body {
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a class="navbar-brand" runat="server" href="~/">Main Menu</a></li>
-                        <li><a class="navbar-brand" runat="server" href="~/AdminPanel">User List</a></li>
+                        <li><a class="navbar-brand" runat="server" href="~/AdminPanel">Admin Panel</a></li>
                     </ul>
 
                        

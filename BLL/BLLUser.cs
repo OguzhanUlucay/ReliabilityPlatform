@@ -15,7 +15,23 @@ namespace BLL
         {
             return FUser.SelectData();
         }
+        public static DataTable SelectDataEnterprise()
+        {
+            return FUser.SelectDataEnterprise();
+        }
+        public static DataTable SelectUserAddress()
+        {
+            return FUser.SelectUserAddress();
+        }
 
+        public static DataTable SelectCategories()
+        {
+            return FUser.SelectCategories();
+        }
+        public static DataTable SelectUserData()
+        {
+            return FUser.SelectUserData();
+        }
         public static string Insert(EUser user)
         {
             String[] errorMessages = new String[100];

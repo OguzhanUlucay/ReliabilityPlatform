@@ -24,6 +24,58 @@ namespace FacadeLayer
             adptr.Fill(dtSelect);
             return dtSelect;
         }
+        public static DataTable SelectCategories()
+        {
+            //sorgular
+
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = Connection.Con;
+            cmd.CommandText = "select * from categories";
+            MySqlDataAdapter adptr = new MySqlDataAdapter();
+            adptr.SelectCommand = cmd;
+            DataTable dtSelect = new DataTable();
+            adptr.Fill(dtSelect);
+            return dtSelect;
+        }
+        public static DataTable SelectUserData()
+        {
+            //sorgular
+
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = Connection.Con;
+            cmd.CommandText = "select * from userdata";
+            MySqlDataAdapter adptr = new MySqlDataAdapter();
+            adptr.SelectCommand = cmd;
+            DataTable dtSelect = new DataTable();
+            adptr.Fill(dtSelect);
+            return dtSelect;
+        }
+        public static DataTable SelectUserAddress()
+        {
+            //sorgular
+
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = Connection.Con;
+            cmd.CommandText = "select * from adress";
+            MySqlDataAdapter adptr = new MySqlDataAdapter();
+            adptr.SelectCommand = cmd;
+            DataTable dtSelect = new DataTable();
+            adptr.Fill(dtSelect);
+            return dtSelect;
+        }
+        public static DataTable SelectDataEnterprise()
+        {
+            //sorgular
+
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = Connection.Con;
+            cmd.CommandText = "select * from enterprise_info";
+            MySqlDataAdapter adptr = new MySqlDataAdapter();
+            adptr.SelectCommand = cmd;
+            DataTable dtSelect = new DataTable();
+            adptr.Fill(dtSelect);
+            return dtSelect;
+        }
 
         public static void Insert(EUser user)
         {
@@ -72,6 +124,7 @@ namespace FacadeLayer
             Connection.Con.Close();
 
         }
+
 
     }
 }

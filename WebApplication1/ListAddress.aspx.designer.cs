@@ -9,59 +9,86 @@
 
 
 
-public partial class AdminPanel {
+public partial class ListAddress {
     
     /// <summary>
-    /// ListAllUsers denetimi.
+    /// RepeaterUsers denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Button ListAllUsers;
+    protected global::System.Web.UI.WebControls.Repeater RepeaterUsers;
     
     /// <summary>
-    /// ListAllAdress denetimi.
+    /// ShortDescription denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Button ListAllAdress;
+    protected global::System.Web.UI.WebControls.TextBox ShortDescription;
     
     /// <summary>
-    /// ListCategories denetimi.
+    /// InputCity denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Button ListCategories;
+    protected global::System.Web.UI.WebControls.TextBox InputCity;
     
     /// <summary>
-    /// ListReviews denetimi.
+    /// InputDistrict denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Button ListReviews;
+    protected global::System.Web.UI.WebControls.TextBox InputDistrict;
     
     /// <summary>
-    /// ListAllSessions denetimi.
+    /// InputNeighbourhood denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Button ListAllSessions;
+    protected global::System.Web.UI.WebControls.TextBox InputNeighbourhood;
     
     /// <summary>
-    /// ListAllVerifications denetimi.
+    /// InputBuilding denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.WebControls.Button ListAllVerifications;
+    protected global::System.Web.UI.WebControls.TextBox InputBuilding;
+    
+    /// <summary>
+    /// InputZipcode denetimi.
+    /// </summary>
+    /// <remarks>
+    /// Otomatik üretilmiş alan.
+    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.TextBox InputZipcode;
+    
+    /// <summary>
+    /// UpdateAddress denetimi.
+    /// </summary>
+    /// <remarks>
+    /// Otomatik üretilmiş alan.
+    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Button UpdateAddress;
+    
+    /// <summary>
+    /// DeleteAddress denetimi.
+    /// </summary>
+    /// <remarks>
+    /// Otomatik üretilmiş alan.
+    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Button DeleteAddress;
 }
