@@ -7,7 +7,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="Server">
 
-    <form>
         
   
 
@@ -48,7 +47,6 @@
           
           </div>
       
-       
              
             
                      <div class="row form-group">
@@ -308,6 +306,7 @@
        
           </fieldset>
         </form>
+
       </div>
 
 <div class="b">
@@ -318,8 +317,6 @@
   </div>
 </div>
 
-                  </div>
 
-    </form>
 
 </asp:Content>

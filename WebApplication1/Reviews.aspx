@@ -1,8 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reviews.aspx.cs" Inherits="Reviews" %>
  <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-</head>
-    <body background="https://wallpaperscraft.com/image/black_background_pattern_light_texture_55291_1920x1080.jpg">
+
+              <style>
+body {
+        background-image: url("https://wallpaperscraft.com/image/black_background_pattern_light_texture_55291_1920x1080.jpg");
+} 
+ 
+</style>
+<body>
 
  <form runat="server">
         <asp:ScriptManager runat="server">
@@ -146,7 +152,7 @@
             
         </div>
         <div  style="text-align: left; width: 100%;">
-            <asp:Button ID="EnterpriseUserADD" class="btn btn-large btn-success" runat="server" Text="Send your Review" OnClick="Review_Submit"/>
+            <asp:Button ID="Review" class="btn btn-large btn-success" runat="server" Text="Send your Review" OnClick="Review_Submit"/>
 
               <button class="btn btn-large btn-danger" type="button" onclick=history.go(-1)> Cancel </button>
         </div>
@@ -178,3 +184,4 @@
         </div>
 
                  </form>
+</body>

@@ -4,8 +4,17 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-</head>
-    <body background="https://wallpaperscraft.com/image/black_background_pattern_light_texture_55291_1920x1080.jpg">
+
+    <style>
+body {
+        background-image: url("https://wallpaperscraft.com/image/black_background_pattern_light_texture_55291_1920x1080.jpg");
+} 
+ 
+</style>
+
+
+ <body>
+
 
  <form runat="server">
         <asp:ScriptManager runat="server">
@@ -128,6 +137,7 @@
 
 </body>
 
-           
+       </body>
+     
          
      </form>
