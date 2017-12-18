@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 
 
+
 public partial class Login : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
@@ -17,7 +18,7 @@ public partial class Login : System.Web.UI.Page
         }
     protected void ADD_Login(object sender, EventArgs e)
     {
-        MySql.Data.MySqlClient.MySqlConnection Con = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;database=mydb;uid=root; password=Berkay35.");
+        MySql.Data.MySqlClient.MySqlConnection Con = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;database=mydb;uid=root; password=4147");
         Con.Open();
 
         MySqlCommand cmd = new MySqlCommand();

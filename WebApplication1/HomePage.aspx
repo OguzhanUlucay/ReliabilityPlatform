@@ -53,7 +53,7 @@ body {
                 <div class="navbar-collapse collapse">
                    
                     
-                      <ul class="nav navbar-nav">
+                     <ul class="nav navbar-nav">
 
                           <li class="dropdown">
                           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reviews
@@ -63,12 +63,14 @@ body {
                           <li><a href="Reviews.aspx">Add a new Review.</a></li>
                           <li><a href="#">Trusted Sellers</a></li>
                           </ul>
-                                          </ul>
+                     </ul>
 
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/VerificationPage">Verification</a></li>
+                    </ul>
                     <ul class="nav navbar-nav pull-right">
                         <li><a runat="server" href="~/Logout">Logout </a></li>
-
-                        </ul>
+                    </ul>
 
 
                 </div>
@@ -83,7 +85,6 @@ body {
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         
-<body>
 
 <div class="container">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -135,9 +136,7 @@ body {
   </div>
 </div>
 
-</body>
+</form>
 
-       </body>
+</body>
      
-         
-     </form>

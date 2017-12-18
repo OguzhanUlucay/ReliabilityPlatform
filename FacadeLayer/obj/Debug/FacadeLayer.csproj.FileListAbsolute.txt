@@ -8,3 +8,12 @@ C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer\obj\Debug\FacadeL
 C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer\obj\Debug\FacadeLayer.csproj.CoreCompileInputs.cache
 C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer\obj\Debug\FacadeLayer.dll
 C:\Users\Berkay\source\repos\Web\PresentationLayer\FacadeLayer\obj\Debug\FacadeLayer.pdb
+C:\Users\oguzh\source\repos\ReliabilityPlatform\FacadeLayer\bin\Debug\FacadeLayer.dll
+C:\Users\oguzh\source\repos\ReliabilityPlatform\FacadeLayer\bin\Debug\FacadeLayer.pdb
+C:\Users\oguzh\source\repos\ReliabilityPlatform\FacadeLayer\bin\Debug\EntityLayer.dll
+C:\Users\oguzh\source\repos\ReliabilityPlatform\FacadeLayer\bin\Debug\EntityLayer.pdb
+C:\Users\oguzh\source\repos\ReliabilityPlatform\FacadeLayer\bin\Debug\MySql.Data.xml
+C:\Users\oguzh\source\repos\ReliabilityPlatform\FacadeLayer\obj\Debug\FacadeLayer.csprojResolveAssemblyReference.cache
+C:\Users\oguzh\source\repos\ReliabilityPlatform\FacadeLayer\obj\Debug\FacadeLayer.csproj.CoreCompileInputs.cache
+C:\Users\oguzh\source\repos\ReliabilityPlatform\FacadeLayer\obj\Debug\FacadeLayer.dll
+C:\Users\oguzh\source\repos\ReliabilityPlatform\FacadeLayer\obj\Debug\FacadeLayer.pdb

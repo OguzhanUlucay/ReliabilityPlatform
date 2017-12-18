@@ -10,3 +10,15 @@ C:\Users\Berkay\source\repos\Web\PresentationLayer\BLL\obj\Debug\BLL.csprojResol
 C:\Users\Berkay\source\repos\Web\PresentationLayer\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 C:\Users\Berkay\source\repos\Web\PresentationLayer\BLL\obj\Debug\BLL.dll
 C:\Users\Berkay\source\repos\Web\PresentationLayer\BLL\obj\Debug\BLL.pdb
+C:\Users\oguzh\source\repos\ReliabilityPlatform\BLL\bin\Debug\BLL.dll
+C:\Users\oguzh\source\repos\ReliabilityPlatform\BLL\bin\Debug\BLL.pdb
+C:\Users\oguzh\source\repos\ReliabilityPlatform\BLL\bin\Debug\EntityLayer.dll
+C:\Users\oguzh\source\repos\ReliabilityPlatform\BLL\bin\Debug\FacadeLayer.dll
+C:\Users\oguzh\source\repos\ReliabilityPlatform\BLL\bin\Debug\MySql.Data.dll
+C:\Users\oguzh\source\repos\ReliabilityPlatform\BLL\bin\Debug\EntityLayer.pdb
+C:\Users\oguzh\source\repos\ReliabilityPlatform\BLL\bin\Debug\FacadeLayer.pdb
+C:\Users\oguzh\source\repos\ReliabilityPlatform\BLL\bin\Debug\MySql.Data.xml
+C:\Users\oguzh\source\repos\ReliabilityPlatform\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\oguzh\source\repos\ReliabilityPlatform\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\oguzh\source\repos\ReliabilityPlatform\BLL\obj\Debug\BLL.dll
+C:\Users\oguzh\source\repos\ReliabilityPlatform\BLL\obj\Debug\BLL.pdb
