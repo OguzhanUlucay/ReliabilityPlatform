@@ -16,8 +16,14 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-    <body background="http://4hdwallpapers.com/wp-content/uploads/2013/03/California-Mountain.jpg">
+       <style>
+body {
+        background-image: url("http://4hdwallpapers.com/wp-content/uploads/2013/03/California-Mountain.jpg");
+} 
+ 
+</style>
 
+    <body>
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -55,18 +61,18 @@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Main Menu</a></li>
-                        <li><a runat="server" href="~/AdminPanel">User List</a></li>
+                        <li><a class="navbar-brand" runat="server" href="~/">Main Menu</a></li>
+                        <li><a class="navbar-brand" runat="server" href="~/AdminPanel">User List</a></li>
                     </ul>
 
                        
 
                       <ul class="nav navbar-nav pull-right">
-                        <li><a runat="server" href="~/Registering">Register Now !</a></li>
+                        <li><a class="navbar-brand" runat="server" href="~/Registering">Register Now !</a></li>
 
                         </ul>
                     <ul class="nav navbar-nav pull-right">
-                        <li><a runat="server" href="~/Login">Login </a></li>
+                        <li><a class="navbar-brand" runat="server" href="~/Login">Login </a></li>
 
                         </ul>
 
