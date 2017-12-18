@@ -9,131 +9,95 @@
 
 
 
-public partial class HomePage {
+public partial class ListUsers {
     
     /// <summary>
-    /// titleHeader denetimi.
+    /// RepeaterUsers denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl titleHeader;
+    protected global::System.Web.UI.WebControls.Repeater RepeaterUsers;
     
     /// <summary>
-    /// myHeader denetimi.
+    /// ShortDescription denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl myHeader;
+    protected global::System.Web.UI.WebControls.TextBox ShortDescription;
     
     /// <summary>
-    /// titleHeader2 denetimi.
+    /// InputName denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl titleHeader2;
+    protected global::System.Web.UI.WebControls.TextBox InputName;
     
     /// <summary>
-    /// myHeader2 denetimi.
+    /// InputSurname denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl myHeader2;
+    protected global::System.Web.UI.WebControls.TextBox InputSurname;
     
     /// <summary>
-    /// titleHeader3 denetimi.
+    /// InputSSN denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl titleHeader3;
+    protected global::System.Web.UI.WebControls.TextBox InputSSN;
     
     /// <summary>
-    /// myHeader3 denetimi.
+    /// InputPhone denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl myHeader3;
+    protected global::System.Web.UI.WebControls.TextBox InputPhone;
     
     /// <summary>
-    /// titleHeader4 denetimi.
+    /// InputEmail denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl titleHeader4;
+    protected global::System.Web.UI.WebControls.TextBox InputEmail;
     
     /// <summary>
-    /// myHeader4 denetimi.
+    /// InputBirthdate denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl myHeader4;
+    protected global::System.Web.UI.WebControls.TextBox InputBirthdate;
     
     /// <summary>
-    /// titleHeader5 denetimi.
+    /// AddUser denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl titleHeader5;
+    protected global::System.Web.UI.WebControls.Button AddUser;
     
     /// <summary>
-    /// myHeader5 denetimi.
+    /// DeleteUser denetimi.
     /// </summary>
     /// <remarks>
     /// Otomatik üretilmiş alan.
     /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
     /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl myHeader5;
-    
-    /// <summary>
-    /// titleHeader6 denetimi.
-    /// </summary>
-    /// <remarks>
-    /// Otomatik üretilmiş alan.
-    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-    /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl titleHeader6;
-    
-    /// <summary>
-    /// myHeader6 denetimi.
-    /// </summary>
-    /// <remarks>
-    /// Otomatik üretilmiş alan.
-    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-    /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl myHeader6;
-    
-    /// <summary>
-    /// titleHeader7 denetimi.
-    /// </summary>
-    /// <remarks>
-    /// Otomatik üretilmiş alan.
-    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-    /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl titleHeader7;
-    
-    /// <summary>
-    /// myHeader7 denetimi.
-    /// </summary>
-    /// <remarks>
-    /// Otomatik üretilmiş alan.
-    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-    /// </remarks>
-    protected global::System.Web.UI.HtmlControls.HtmlGenericControl myHeader7;
+    protected global::System.Web.UI.WebControls.Button DeleteUser;
 }

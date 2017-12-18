@@ -4,7 +4,7 @@
 
               <style>
 body {
-        background-image: url("https://wallpaperscraft.com/image/black_background_pattern_light_texture_55291_1920x1080.jpg");
+        background-image: url("http://www.intrawallpaper.com/static/images/Autumn-Garden-HD-Wallpaper1_GKlh4O7.jpg");
 } 
  
 </style>
@@ -53,14 +53,13 @@ body {
                           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reviews
                         <span class="caret"></span></a>
                          <ul class="dropdown-menu">
-                         <li><a href="Categories.aspx">Search Reviews by Categories</a></li>
                           <li><a href="Reviews.aspx">Add a new Review.</a></li>
                           <li><a href="#">Trusted Sellers</a></li>
                           </ul>
-                                          </ul>
+                          </ul>
 
                     <ul class="nav navbar-nav pull-right">
-                        <li><a runat="server" href="~/Logout">Logout </a></li>
+                        <li><a class="navbar-brand" runat="server" href="~/Logout">Logout </a></li>
 
                         </ul>
 
@@ -98,27 +97,27 @@ body {
                 <div>
                     <form method="post">
                         <div class="form-group">
-                                <h4 style="color:coral;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Name</h4>      
+                                <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Name</h4>      
 
                            <p align="left"><textarea rows="1" cols="1" class="form-control" id="inputName" name="inputName"style="color: white; background-color: black"></textarea></p> 
                             
                         </div>
                         <div class="form-group">
-                                <h4 style="color:coral;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Your E-mail</h4>      
+                                <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Your E-mail</h4>      
                            <p align="left"><textarea rows="1" cols="1" class="form-control" id="inputEmail"style="color: white; background-color: black"></textarea></p> 
 
                         </div>
                         <div class="form-group">
 
-                                <h4 style="color:coral;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Title of Review</h4>      
+                                <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Title of Review</h4>      
                            <p align="left"><textarea rows="1" cols="1" class="form-control" id="inputTitle" style="color: white; background-color: black"></textarea></p> 
                         </div>
                          <div class="form-group">
-                                <h4 style="color:coral;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Type the user e-mail that you want to review</h4>      
+                                <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Type the user e-mail that you want to review</h4>      
                            <p align="left"><textarea rows="1" cols="1" class="form-control" id="inputReviewEmail" style="color: white; background-color: black"></textarea></p> 
                         </div>
                           <div class="form-group">
-                                <h4 style="color:coral;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Categories</h4>      
+                                <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Categories</h4>      
 <div class="form-group">
   <select class="form-control" id="sel1" style="color: white; background-color: black" >
     <option>Computer</option>
@@ -139,7 +138,7 @@ body {
                         </div>
                         <div class="form-group">
 
-                                <h4 style="color:coral;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Description</h4>      
+                                <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Description</h4>      
                            <p align="left"><textarea rows="5" cols="15" class="form-control" id="Description" style="color: white; background-color: black"></textarea></p> 
                         </div>
                   
@@ -165,11 +164,11 @@ body {
         <div class="col-md-4">
                                 <h1 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Rules</h1>      
             
-                                           <h4 style="color:coral;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >              --- To accept your review, please enter information correctly.</h4>      
-                                           <h4 style="color:coral;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >              --- Select categories correctly.</h4>      
-                                           <h4 style="color:coral;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >              --- Your review will be confirmed in 24 hours.</h4>      
-                                            <h4 style="color:coral;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >              --- Contact if you have issues</h4>      
-                                           <h4 style="color:coral;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >              ---              @berkay.bingol@ceng.deu.edu.tr,oguzhan.ulucay@ceng.deu.edu.tr
+                                           <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >              --- To accept your review, please enter information correctly.</h4>      
+                                           <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >              --- Select categories correctly.</h4>      
+                                           <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >              --- Your review will be confirmed in 24 hours.</h4>      
+                                            <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >              --- Contact if you have issues</h4>      
+                                           <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >              ---              @berkay.bingol@ceng.deu.edu.tr,oguzhan.ulucay@ceng.deu.edu.tr
 </h4>      
 
 

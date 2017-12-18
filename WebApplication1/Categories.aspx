@@ -53,7 +53,6 @@ body {
                           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Reviews
                         <span class="caret"></span></a>
                          <ul class="dropdown-menu">
-                         <li><a href="#">Search Reviews by Categories</a></li>
                           <li><a href="Reviews.aspx">Add a new Review.</a></li>
                           <li><a href="#">Trusted Sellers</a></li>
                           </ul>
@@ -70,19 +69,7 @@ body {
         </div>
    
 
-<div class="list-group">
-  <a href="#" runat="server" onServerClick="Computer"  class="list-group-item list-group-item-warning">Computers</a>
-  <a href="#" runat="server" onServerClick="Cars"  class="list-group-item list-group-item-success">Cars</a>
-  <a href="#" runat="server" onServerClick="Headphones"  class="list-group-item list-group-item-warning">Headphones</a>
-  <a href="#" runat="server" onServerClick="Networking"  class="list-group-item list-group-item-info">Networking</a>
-  <a href="#" runat="server" onServerClick="Phones"  class="list-group-item list-group-item-warning">Phones</a>
-  <a href="#" runat="server" onServerClick="Printers"  class="list-group-item list-group-item-danger">Printers</a>
-  <a href="#" runat="server" onServerClick="Softwares"  class="list-group-item list-group-item-warning">Softwares</a>
-  <a href="#" runat="server" onServerClick="TVs"  class="list-group-item list-group-item-danger">TVs</a>
-  <a href="#" runat="server" onServerClick="HomeEntertainment"  class="list-group-item list-group-item-warning">Home Entertainment</a>
-  <a href="#" runat="server" onServerClick="WearableTech"  class="list-group-item list-group-item-success">Wearable Tech</a>
+    
 
-</div>     
-
- </form>
 </body>
+ </form>
