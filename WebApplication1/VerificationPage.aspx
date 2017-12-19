@@ -91,11 +91,13 @@
         <asp:GridView ID="gvImages" runat="server" AutoGenerateColumns="false">
             <Columns>
                 <asp:BoundField HeaderText="File Name" DataField ="name" />
-                <asp:TemplateField HeaderText="Image">
+                <%-- <asp:TemplateField HeaderText="Image" >
                     <ItemTemplate>
-                        <asp:Image ID="Image1" runat="server" Height="80" Width ="80" />
+                        <asp:Image ID="Image1" runat="server" Height="80" Width ="80" DataField ="image" />
                     </ItemTemplate>
-                </asp:TemplateField>
+                </asp:TemplateField>--%>
+                <asp:ImageField DataImageUrlField ="image" ControlStyle-Width="100px" ControlStyle-Height="100px">
+                </asp:ImageField>
             </Columns>
         </asp:GridView>
        </form>

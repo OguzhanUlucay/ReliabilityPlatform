@@ -7,6 +7,7 @@ using EntityLayer;
 using System.Data;
 using MySql.Data.MySqlClient;
 
+
 namespace FacadeLayer
 {
     public class FUser
@@ -90,18 +91,24 @@ namespace FacadeLayer
             DataTable dt = new DataTable();
             MySqlDataAdapter adpt = new MySqlDataAdapter();
 
-            string sqlQuery = "select * from images";
+            string sqlQuery = "SELECT * FROM images";
            
             MySqlCommand cmd = new MySqlCommand(sqlQuery, Connection.Con);
 
             adpt.SelectCommand = cmd;
-            adpt.Fill(dt);
-
+            
             if (Connection.Con.State == ConnectionState.Closed)
             {
                 Connection.Con.Open();
             }
-            cmd.ExecuteNonQuery();
+            //MySqlDataReader reader = cmd.ExecuteReader();
+            //reader.Read();
+
+            //byte[] file = (byte[])reader["image"];
+
+            //reader.Close();
+            adpt.Fill(dt);
+            
             Connection.Con.Close();
             return dt;
         }

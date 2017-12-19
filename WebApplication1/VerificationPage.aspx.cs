@@ -55,8 +55,14 @@ namespace WebApplication1
         }
         protected void getImages(object sender, EventArgs e)
         {
-            gvImages.DataSource = BLLUser.GetImage();
-            gvImages.DataBind();
+            DataTable dt = BLLUser.GetImage();
+
+            if (dt.Rows.Count > 0)
+            {
+                gvImages.DataSource = dt;
+                gvImages.DataBind();
+
+            }
         }
     }
 }
