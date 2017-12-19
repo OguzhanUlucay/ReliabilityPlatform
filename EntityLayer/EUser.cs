@@ -45,4 +45,22 @@ namespace EntityLayer
 
 
     }
+    public class Review
+    {
+        public int review_id { get; set; }
+        public int category_id { get; set; }
+        public int buyer_id { get; set; }
+        public int seller_id { get; set; }
+        public int reviewed_by { get; set; }
+        public string title { get; set; }
+        public string description { get; set; }
+
+    }
+    public class EImage
+     {
+        public byte[] image { get; set; }
+        public string name { get; set; }
+ 
+ 
+      }
 }

@@ -94,6 +94,27 @@ namespace BLL
             return "";
 
         }
+        public static string InsertReview(Review user)
+        {
+            //validations will add
+
+            FUser.InsertReview(user);
+            return "";
+
+        }
+        public static string InsertImage(EImage image)
+        {
+
+            FUser.InsertImage(image);
+            return "";
+        }
+
+
+        public static DataTable GetImage()
+        {
+            return FUser.GetImages();
+
+        }
 
     }
 }

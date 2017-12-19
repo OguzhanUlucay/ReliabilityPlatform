@@ -1,6 +1,9 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.master" CodeBehind="AdminPanel.aspx.cs" Inherits="AdminPanel" %>
 
 
+  
+
+
 
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">

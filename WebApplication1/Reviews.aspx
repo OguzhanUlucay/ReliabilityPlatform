@@ -99,27 +99,47 @@ body {
                         <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Name</h4>      
 
-                           <p align="left"><textarea rows="1" cols="1" class="form-control" id="inputName" name="inputName"style="color: white; background-color: black"></textarea></p> 
-                            
+
+            <div class="form-group">
+<asp:TextBox id="inputName" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+</div>                            
                         </div>
+
+                         <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Buyer/Seller Select</h4>      
+<div class="form-group">
+  <select class="form-control" runat="server" id="Select2" style="color: white; background-color: black" >
+    <option>Buyer</option>
+    <option>Seller</option>
+    
+
+
+      
+  </select>
+</div>
+
                         <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Your E-mail</h4>      
-                           <p align="left"><textarea rows="1" cols="1" class="form-control" id="inputEmail"style="color: white; background-color: black"></textarea></p> 
+<asp:TextBox id="inputEmail" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
 
                         </div>
                         <div class="form-group">
 
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Title of Review</h4>      
-                           <p align="left"><textarea rows="1" cols="1" class="form-control" id="inputTitle" style="color: white; background-color: black"></textarea></p> 
+<asp:TextBox id="inputTitle" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+                                         <div class="">
+
+                <asp:Label ID="LabelWarning" runat="server" Text=""></asp:Label>
+
+            </div>     
                         </div>
                          <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Type the user e-mail that you want to review</h4>      
-                           <p align="left"><textarea rows="1" cols="1" class="form-control" id="inputReviewEmail" style="color: white; background-color: black"></textarea></p> 
+<asp:TextBox id="inputOtherEmail" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
                         </div>
                           <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Categories</h4>      
 <div class="form-group">
-  <select class="form-control" id="sel1" style="color: white; background-color: black" >
+  <select class="form-control" runat="server" id="sel1" style="color: white; background-color: black" >
     <option>Computer</option>
     <option>Cars</option>
     <option>Headphones</option>
@@ -135,11 +155,12 @@ body {
       
   </select>
 </div>
+
                         </div>
                         <div class="form-group">
 
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Description</h4>      
-                           <p align="left"><textarea rows="5" cols="15" class="form-control" id="Description" style="color: white; background-color: black"></textarea></p> 
+<asp:TextBox id="inputDescription" runat="server" CssClass="content" MaxLength="100"  style="height: 65px; width: 800px; color: white; background-color: black " />
                         </div>
                   
                     </form>
@@ -147,9 +168,38 @@ body {
             
         </div>
 
-        <div>
-            
+
+          <div class="form-group">
+                                <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Your documents Picture</h4>      
+<asp:TextBox id="inputImage" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+               <asp:FileUpload id ="ImageUpload" runat="server" />
+
+         </div>
+         <div class ="form-group">
+                                <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Other Contractor's Mail</h4>      
+<asp:TextBox id="inputEmail2" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+         </div>
+
+
+         <label hidden id="label_error" runat="server" text="error"> </label>
+
+        <div class ="form-group">
+            <asp:Button ID="button_show" class="btn btn-default" runat="server"  Text="Pictures" OnClick="getImages" />
         </div>
+
+        <asp:GridView ID="gvImages" runat="server" AutoGenerateColumns="false">
+            <Columns>
+                <asp:BoundField HeaderText="File Name" DataField ="name" />
+                <%-- <asp:TemplateField HeaderText="Image" >
+                    <ItemTemplate>
+                        <asp:Image ID="Image1" runat="server" Height="80" Width ="80" DataField ="image" />
+                    </ItemTemplate>
+                </asp:TemplateField>--%>
+                <asp:ImageField DataImageUrlField ="image" ControlStyle-Width="100px" ControlStyle-Height="100px">
+                </asp:ImageField>
+            </Columns>
+        </asp:GridView>
+      
         <div  style="text-align: left; width: 100%;">
             <asp:Button ID="Review" class="btn btn-large btn-success" runat="server" Text="Send your Review" OnClick="Review_Submit"/>
 

@@ -11,7 +11,12 @@ public partial class Registering : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-        
+
+        if (Session["email"] != null)
+        {
+            Response.Redirect("HomePage.aspx");
+        }
+
     }
 
          protected void ADD_NormalUser(object sender, EventArgs e)

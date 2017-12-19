@@ -4,9 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using MySql.Data.MySqlClient;
 
 
-    public partial class HomePage : System.Web.UI.Page
+public partial class HomePage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -15,8 +16,29 @@ using System.Web.UI.WebControls;
             
         }
         //bu kısma full yorumlar eklenecek.
-        titleHeader.InnerHtml = "Hellasdasdsadasdo";
-        myHeader.InnerHtml = "Hello";
+        MySql.Data.MySqlClient.MySqlConnection Con = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;database=mydb;uid=root; password=Berkay35.");
+        Con.Open();
+        MySqlCommand cmd = new MySqlCommand();
+        cmd.Connection = Con;
+        cmd.CommandText = "select title from reviews_and_ratings where review_id = 1";
+        var queryResult = cmd.ExecuteScalar();
+        String title1 = Convert.ToString(queryResult);
+        titleHeader.InnerHtml = title1;
+        cmd.CommandText = "select description from reviews_and_ratings where review_id = 1";
+        queryResult = cmd.ExecuteScalar();
+        String desc1 = Convert.ToString(queryResult);
+        myHeader.InnerHtml = desc1;
+
+        cmd.CommandText = "select title from reviews_and_ratings where review_id = 2";
+        queryResult = cmd.ExecuteScalar();
+        String title2 = Convert.ToString(queryResult);
+        titleHeader2.InnerHtml = title2;
+        cmd.CommandText = "select description from reviews_and_ratings where review_id = 2";
+        queryResult = cmd.ExecuteScalar();
+        String desc2 = Convert.ToString(queryResult);
+        myHeader2.InnerHtml = desc2;
+
+
     }
 
     protected void Computer(object sender, EventArgs e)

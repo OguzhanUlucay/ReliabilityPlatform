@@ -124,6 +124,57 @@ namespace FacadeLayer
             Connection.Con.Close();
 
         }
+        public static void InsertReview(Review user)
+        {
+            string sqlQuery = "INSERT INTO reviews_and_ratings (category_id,buyer_id,title,description,review_id,seller_id,reviewed_by) VALUES('" + user.category_id + "','" + user.buyer_id + "','" + user.title + "','" + user.description + "','" + user.review_id + "','" + user.seller_id + "','" + user.reviewed_by + "')";
+            MySqlCommand cmd = new MySqlCommand(sqlQuery, Connection.Con);
+            if (Connection.Con.State == ConnectionState.Closed)
+            {
+                Connection.Con.Open();
+            }
+            cmd.ExecuteNonQuery();
+            Connection.Con.Close();
+
+        }
+
+        public static void InsertImage(EImage image)
+        {
+            string sqlQuery = "INSERT INTO images (image, name) VALUES('" + image.image + "','" + image.name + "')";
+            MySqlCommand cmd = new MySqlCommand(sqlQuery, Connection.Con);
+            if (Connection.Con.State == ConnectionState.Closed)
+            {
+                Connection.Con.Open();
+            }
+            cmd.ExecuteNonQuery();
+            Connection.Con.Close();
+
+        }
+        public static DataTable GetImages()
+        {
+            DataTable dt = new DataTable();
+            MySqlDataAdapter adpt = new MySqlDataAdapter();
+
+            string sqlQuery = "SELECT * FROM images";
+
+            MySqlCommand cmd = new MySqlCommand(sqlQuery, Connection.Con);
+
+            adpt.SelectCommand = cmd;
+
+            if (Connection.Con.State == ConnectionState.Closed)
+            {
+                Connection.Con.Open();
+            }
+            //MySqlDataReader reader = cmd.ExecuteReader();
+            //reader.Read();
+
+            //byte[] file = (byte[])reader["image"];
+
+            //reader.Close();
+            adpt.Fill(dt);
+
+            Connection.Con.Close();
+            return dt;
+        }
 
 
     }
