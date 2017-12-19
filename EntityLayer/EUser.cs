@@ -60,7 +60,7 @@ namespace EntityLayer
      {
         public byte[] image { get; set; }
         public string name { get; set; }
- 
- 
-      }
+        public int user_id { get; set; }
+
+    }
 }
