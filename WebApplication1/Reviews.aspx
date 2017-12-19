@@ -99,27 +99,34 @@ body {
                         <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Name</h4>      
 
-                           <p align="left"><textarea rows="1" cols="1" class="form-control" id="inputName" name="inputName"style="color: white; background-color: black"></textarea></p> 
-                            
+
+            <div class="form-group">
+<asp:TextBox id="inputName" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+</div>                            
                         </div>
                         <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Your E-mail</h4>      
-                           <p align="left"><textarea rows="1" cols="1" class="form-control" id="inputEmail"style="color: white; background-color: black"></textarea></p> 
+<asp:TextBox id="inputEmail" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
 
                         </div>
                         <div class="form-group">
 
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Title of Review</h4>      
-                           <p align="left"><textarea rows="1" cols="1" class="form-control" id="inputTitle" style="color: white; background-color: black"></textarea></p> 
+<asp:TextBox id="inputTitle" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+                                         <div class="">
+
+                <asp:Label ID="LabelWarning" runat="server" Text=""></asp:Label>
+
+            </div>     
                         </div>
                          <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Type the user e-mail that you want to review</h4>      
-                           <p align="left"><textarea rows="1" cols="1" class="form-control" id="inputReviewEmail" style="color: white; background-color: black"></textarea></p> 
+<asp:TextBox id="inputOtherEmail" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
                         </div>
                           <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Categories</h4>      
 <div class="form-group">
-  <select class="form-control" id="sel1" style="color: white; background-color: black" >
+  <select class="form-control" runat="server" id="sel1" style="color: white; background-color: black" >
     <option>Computer</option>
     <option>Cars</option>
     <option>Headphones</option>
@@ -139,7 +146,7 @@ body {
                         <div class="form-group">
 
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Description</h4>      
-                           <p align="left"><textarea rows="5" cols="15" class="form-control" id="Description" style="color: white; background-color: black"></textarea></p> 
+<asp:TextBox id="inputDescription" runat="server" CssClass="content" MaxLength="100"  style="height: 65px; width: 800px; color: white; background-color: black " />
                         </div>
                   
                     </form>

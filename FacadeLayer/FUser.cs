@@ -124,6 +124,18 @@ namespace FacadeLayer
             Connection.Con.Close();
 
         }
+        public static void InsertReview(Review user)
+        {
+            string sqlQuery = "INSERT INTO reviews_and_ratings (category_id,buyer_id,title,description,review_id,seller_id) VALUES('" + user.category_id + "','" + user.buyer_id + "','" + user.title + "','" + user.description + "','" + user.review_id + "','" + user.seller_id + "')";
+            MySqlCommand cmd = new MySqlCommand(sqlQuery, Connection.Con);
+            if (Connection.Con.State == ConnectionState.Closed)
+            {
+                Connection.Con.Open();
+            }
+            cmd.ExecuteNonQuery();
+            Connection.Con.Close();
+
+        }
 
 
     }
