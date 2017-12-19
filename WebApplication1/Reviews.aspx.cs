@@ -99,7 +99,7 @@ public partial class Reviews : System.Web.UI.Page
 
         //review id
         //getting last id of user id to insert new review id plus+max.
-        cmd.CommandText = "  from reviews_and_ratings";
+        cmd.CommandText = "select MAX(review_id) from reviews_and_ratings";
         queryResult = cmd.ExecuteScalar();
         if(queryResult!=DBNull.Value)
         {
@@ -116,7 +116,63 @@ public partial class Reviews : System.Web.UI.Page
 
 
         LabelWarning.Text = BLLUser.InsertReview(new Review { category_id = categoryId,reviewed_by= reviewed_by, buyer_id = buyer_id, title = inputTitle.Text, description =inputDescription.Text, review_id = review_id, seller_id = seller_id });
+
+
+
+
+        if (!ImageUpload.HasFile)
+        {
+            label_error.Visible = true;
+            label_error.InnerText = "Please Select Image File";
+        }
+        else
+        {
+            string filename = ImageUpload.PostedFile.FileName;
+            int length = ImageUpload.PostedFile.ContentLength;
+            byte[] pic = new byte[length];
+
+            ImageUpload.PostedFile.InputStream.Read(pic, 0, length);
+
+            try
+            {
+                string warning;
+                warning = BLLUser.InsertImage(new EImage { image = pic, name = filename });
+
+            }
+            catch (Exception ex)
+            {
+                label_error.Visible = true;
+                label_error.InnerText = "Hata Oluştu: " + ex.Message.ToString();
+            }
+
+
+
+        }
+
+
+
+
         Response.Redirect("HomePage.aspx");
 
+
+
+
+    }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        
+
+    }
+    protected void getImages(object sender, EventArgs e)
+    {
+        DataTable dt = BLLUser.GetImage();
+
+        if (dt.Rows.Count > 0)
+        {
+            gvImages.DataSource = dt;
+            gvImages.DataBind();
+
+        }
     }
 }

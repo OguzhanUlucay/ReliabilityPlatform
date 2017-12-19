@@ -56,4 +56,11 @@ namespace EntityLayer
         public string description { get; set; }
 
     }
+    public class EImage
+     {
+        public byte[] image { get; set; }
+        public string name { get; set; }
+ 
+ 
+      }
 }

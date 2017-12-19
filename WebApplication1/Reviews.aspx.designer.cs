@@ -84,6 +84,60 @@ public partial class Reviews {
     protected global::System.Web.UI.WebControls.TextBox inputDescription;
     
     /// <summary>
+    /// inputImage denetimi.
+    /// </summary>
+    /// <remarks>
+    /// Otomatik üretilmiş alan.
+    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.TextBox inputImage;
+    
+    /// <summary>
+    /// ImageUpload denetimi.
+    /// </summary>
+    /// <remarks>
+    /// Otomatik üretilmiş alan.
+    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.FileUpload ImageUpload;
+    
+    /// <summary>
+    /// inputEmail2 denetimi.
+    /// </summary>
+    /// <remarks>
+    /// Otomatik üretilmiş alan.
+    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.TextBox inputEmail2;
+    
+    /// <summary>
+    /// label_error denetimi.
+    /// </summary>
+    /// <remarks>
+    /// Otomatik üretilmiş alan.
+    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+    /// </remarks>
+    protected global::System.Web.UI.HtmlControls.HtmlGenericControl label_error;
+    
+    /// <summary>
+    /// button_show denetimi.
+    /// </summary>
+    /// <remarks>
+    /// Otomatik üretilmiş alan.
+    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Button button_show;
+    
+    /// <summary>
+    /// gvImages denetimi.
+    /// </summary>
+    /// <remarks>
+    /// Otomatik üretilmiş alan.
+    /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.GridView gvImages;
+    
+    /// <summary>
     /// Review denetimi.
     /// </summary>
     /// <remarks>

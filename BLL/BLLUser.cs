@@ -102,6 +102,19 @@ namespace BLL
             return "";
 
         }
+        public static string InsertImage(EImage image)
+        {
+
+            FUser.InsertImage(image);
+            return "";
+        }
+
+
+        public static DataTable GetImage()
+        {
+            return FUser.GetImages();
+
+        }
 
     }
 }

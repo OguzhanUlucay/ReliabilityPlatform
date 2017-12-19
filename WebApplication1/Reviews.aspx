@@ -168,9 +168,38 @@ body {
             
         </div>
 
-        <div>
-            
+
+          <div class="form-group">
+                                <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Your documents Picture</h4>      
+<asp:TextBox id="inputImage" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+               <asp:FileUpload id ="ImageUpload" runat="server" />
+
+         </div>
+         <div class ="form-group">
+                                <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Other Contractor's Mail</h4>      
+<asp:TextBox id="inputEmail2" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+         </div>
+
+
+         <label hidden id="label_error" runat="server" text="error"> </label>
+
+        <div class ="form-group">
+            <asp:Button ID="button_show" class="btn btn-default" runat="server"  Text="Pictures" OnClick="getImages" />
         </div>
+
+        <asp:GridView ID="gvImages" runat="server" AutoGenerateColumns="false">
+            <Columns>
+                <asp:BoundField HeaderText="File Name" DataField ="name" />
+                <%-- <asp:TemplateField HeaderText="Image" >
+                    <ItemTemplate>
+                        <asp:Image ID="Image1" runat="server" Height="80" Width ="80" DataField ="image" />
+                    </ItemTemplate>
+                </asp:TemplateField>--%>
+                <asp:ImageField DataImageUrlField ="image" ControlStyle-Width="100px" ControlStyle-Height="100px">
+                </asp:ImageField>
+            </Columns>
+        </asp:GridView>
+      
         <div  style="text-align: left; width: 100%;">
             <asp:Button ID="Review" class="btn btn-large btn-success" runat="server" Text="Send your Review" OnClick="Review_Submit"/>
 

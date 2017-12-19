@@ -137,6 +137,45 @@ namespace FacadeLayer
 
         }
 
+        public static void InsertImage(EImage image)
+        {
+            string sqlQuery = "INSERT INTO images (image, name) VALUES('" + image.image + "','" + image.name + "')";
+            MySqlCommand cmd = new MySqlCommand(sqlQuery, Connection.Con);
+            if (Connection.Con.State == ConnectionState.Closed)
+            {
+                Connection.Con.Open();
+            }
+            cmd.ExecuteNonQuery();
+            Connection.Con.Close();
+
+        }
+        public static DataTable GetImages()
+        {
+            DataTable dt = new DataTable();
+            MySqlDataAdapter adpt = new MySqlDataAdapter();
+
+            string sqlQuery = "SELECT * FROM images";
+
+            MySqlCommand cmd = new MySqlCommand(sqlQuery, Connection.Con);
+
+            adpt.SelectCommand = cmd;
+
+            if (Connection.Con.State == ConnectionState.Closed)
+            {
+                Connection.Con.Open();
+            }
+            //MySqlDataReader reader = cmd.ExecuteReader();
+            //reader.Read();
+
+            //byte[] file = (byte[])reader["image"];
+
+            //reader.Close();
+            adpt.Fill(dt);
+
+            Connection.Con.Close();
+            return dt;
+        }
+
 
     }
 }
