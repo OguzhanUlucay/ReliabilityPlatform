@@ -104,6 +104,19 @@ body {
 <asp:TextBox id="inputName" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
 </div>                            
                         </div>
+
+                         <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Buyer/Seller Select</h4>      
+<div class="form-group">
+  <select class="form-control" runat="server" id="Select2" style="color: white; background-color: black" >
+    <option>Buyer</option>
+    <option>Seller</option>
+    
+
+
+      
+  </select>
+</div>
+
                         <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Your E-mail</h4>      
 <asp:TextBox id="inputEmail" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
@@ -142,6 +155,7 @@ body {
       
   </select>
 </div>
+
                         </div>
                         <div class="form-group">
 

@@ -126,7 +126,7 @@ namespace FacadeLayer
         }
         public static void InsertReview(Review user)
         {
-            string sqlQuery = "INSERT INTO reviews_and_ratings (category_id,buyer_id,title,description,review_id,seller_id) VALUES('" + user.category_id + "','" + user.buyer_id + "','" + user.title + "','" + user.description + "','" + user.review_id + "','" + user.seller_id + "')";
+            string sqlQuery = "INSERT INTO reviews_and_ratings (category_id,buyer_id,title,description,review_id,seller_id,reviewed_by) VALUES('" + user.category_id + "','" + user.buyer_id + "','" + user.title + "','" + user.description + "','" + user.review_id + "','" + user.seller_id + "','" + user.reviewed_by + "')";
             MySqlCommand cmd = new MySqlCommand(sqlQuery, Connection.Con);
             if (Connection.Con.State == ConnectionState.Closed)
             {

@@ -20,9 +20,21 @@ public partial class Reviews : System.Web.UI.Page
         {
         //tekrar bak. http object requestle textaredaki inputu alma.->  string a=Request.Form["inputName"];
         String categoryID = sel1.Value;
+        String reviewedBy = Select2.Value;
+
+        int reviewed_by = 0;
         int categoryId = 0;
-        
-        if(categoryID == "Computer")
+        int review_id = 0;
+        if (reviewedBy == "Buyer")
+        {
+            reviewed_by = 0;
+        }
+        else if (reviewedBy == "Seller")
+        {
+            reviewed_by = 1;
+        }
+
+        if (categoryID == "Computer")
         {
             categoryId = 1;
         }
@@ -87,13 +99,24 @@ public partial class Reviews : System.Web.UI.Page
 
         //review id
         //getting last id of user id to insert new review id plus+max.
-        cmd.CommandText = "SELECT MAX(review_id) from reviews_and_ratings";
+        cmd.CommandText = "  from reviews_and_ratings";
         queryResult = cmd.ExecuteScalar();
-        int review_id = Convert.ToInt32(queryResult) +1;
+        if(queryResult!=DBNull.Value)
+        {
+            review_id = Convert.ToInt32(queryResult) + 1;
 
-        
-        LabelWarning.Text = BLLUser.InsertReview(new Review { category_id = categoryId, buyer_id = buyer_id, title = inputTitle.Text, description =inputDescription.Text, review_id = review_id, seller_id = seller_id });
+        }
 
+        else
+        {
+            review_id = 1;
+        }
+
+
+
+
+        LabelWarning.Text = BLLUser.InsertReview(new Review { category_id = categoryId,reviewed_by= reviewed_by, buyer_id = buyer_id, title = inputTitle.Text, description =inputDescription.Text, review_id = review_id, seller_id = seller_id });
+        Response.Redirect("HomePage.aspx");
 
     }
 }

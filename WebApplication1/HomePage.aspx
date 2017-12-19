@@ -367,7 +367,7 @@ timeline {
       <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
-          <p id="titleHeader2" runat="server" class="timeline-title">M</p>
+          <p id="titleHeader2" runat="server" class="timeline-title"></p>
         </div>
         <div class="timeline-body">
             <p id="myHeader2" runat="server"></p>
@@ -380,7 +380,7 @@ timeline {
       <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
-          <p id="titleHeader3" runat="server" class="timeline-title">M</p>
+          <p id="titleHeader3" runat="server" class="timeline-title"></p>
         </div>
         <div class="timeline-body">
                       <p id="myHeader3" runat="server"></p>
@@ -391,7 +391,7 @@ timeline {
     <li class="timeline-inverted">
       <div class="timeline-panel">
         <div class="timeline-heading">
-          <p id="titleHeader4" runat="server" class="timeline-title">M</p>
+          <p id="titleHeader4" runat="server" class="timeline-title"></p>
         </div>
         <div class="timeline-body">
                       <p id="myHeader4" runat="server"></p>
@@ -403,7 +403,7 @@ timeline {
       <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
-          <p id="titleHeader5" runat="server" class="timeline-title">M</p>
+          <p id="titleHeader5" runat="server" class="timeline-title"></p>
         </div>
         <div class="timeline-body">
                       <p id="myHeader5" runat="server"></p>
@@ -427,7 +427,7 @@ timeline {
     <li>
       <div class="timeline-panel">
         <div class="timeline-heading">
-          <p id="titleHeader6" runat="server" class="timeline-title">M</p>
+          <p id="titleHeader6" runat="server" class="timeline-title"></p>
         </div>
         <div class="timeline-body">
                      <p id="myHeader6" runat="server"></p>
@@ -439,7 +439,7 @@ timeline {
       <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
       <div class="timeline-panel">
         <div class="timeline-heading">
-          <p id="titleHeader7" runat="server" class="timeline-title">M</p>
+          <p id="titleHeader7" runat="server" class="timeline-title"></p>
         </div>
         <div class="timeline-body">
                      <p id="myHeader7" runat="server"></p>

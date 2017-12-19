@@ -51,6 +51,7 @@ namespace EntityLayer
         public int category_id { get; set; }
         public int buyer_id { get; set; }
         public int seller_id { get; set; }
+        public int reviewed_by { get; set; }
         public string title { get; set; }
         public string description { get; set; }
 
