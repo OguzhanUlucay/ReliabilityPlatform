@@ -4,7 +4,7 @@
 
               <style>
 body {
-        background-image: url("http://www.intrawallpaper.com/static/images/Autumn-Garden-HD-Wallpaper1_GKlh4O7.jpg");
+        background-image: url("https://wallpapercave.com/wp/ogonaHq.jpg");
 } 
  
 </style>
@@ -42,8 +42,13 @@ body {
                         <span class="icon-bar"></span>
 
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/HomePage">Reliability Platform</a>
+
+              <a class="navbar-brand" runat="server" href="~/HomePage">Reliability Platform</a>
+
+                        
+
                 </div>
+
                 <div class="navbar-collapse collapse">
                    
                     
@@ -55,11 +60,16 @@ body {
                          <ul class="dropdown-menu">
                           <li><a href="Reviews.aspx">Add a new Review.</a></li>
                           <li><a href="#">Trusted Sellers</a></li>
-                          </ul>
-                          </ul>
 
+                          </ul>
+                                          </ul>
+                   
                     <ul class="nav navbar-nav pull-right">
-                        <li><a class="navbar-brand" runat="server" href="~/Logout">Logout </a></li>
+                        <li><a runat="server" href="~/AdminPanel">Admin Panel </a></li>
+
+                        </ul>
+                    <ul class="nav navbar-nav pull-right">
+                        <li><a runat="server" href="~/Logout">Logout </a></li>
 
                         </ul>
 
@@ -67,7 +77,6 @@ body {
                 </div>
             </div>
         </div>
-
 
  
 
@@ -96,13 +105,11 @@ body {
             
                 <div>
                     <form method="post">
-                        <div class="form-group">
+                        <div class="input-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Name</h4>      
 
-
-            <div class="form-group">
-<asp:TextBox id="inputName" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
-</div>                            
+                                <asp:TextBox id="inputName" class="form-control" runat="server" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+                                      
                         </div>
 
                          <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Buyer/Seller Select</h4>      
@@ -119,13 +126,13 @@ body {
 
                         <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Your E-mail</h4>      
-<asp:TextBox id="inputEmail" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+<asp:TextBox id="inputEmail" runat="server" class="form-control" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
 
                         </div>
                         <div class="form-group">
 
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Title of Review</h4>      
-<asp:TextBox id="inputTitle" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+<asp:TextBox id="inputTitle" runat="server" class="form-control" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
                                          <div class="">
 
                 <asp:Label ID="LabelWarning" runat="server" Text=""></asp:Label>
@@ -134,7 +141,7 @@ body {
                         </div>
                          <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Type the user e-mail that you want to review</h4>      
-<asp:TextBox id="inputOtherEmail" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+<asp:TextBox id="inputOtherEmail" runat="server" class="form-control" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
                         </div>
                           <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Categories</h4>      
@@ -160,7 +167,7 @@ body {
                         <div class="form-group">
 
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Description</h4>      
-<asp:TextBox id="inputDescription" runat="server" CssClass="content" MaxLength="100"  style="height: 65px; width: 800px; color: white; background-color: black " />
+<asp:TextBox id="inputDescription" runat="server" class="form-control" MaxLength="100"  style="height: 65px; width: 800px; color: white; background-color: black " />
                         </div>
                   
                     </form>
@@ -171,21 +178,18 @@ body {
 
           <div class="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Your documents Picture</h4>      
-<asp:TextBox id="inputImage" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
-               <asp:FileUpload id ="ImageUpload" runat="server" />
+               <asp:FileUpload id ="ImageUpload" class="btn btn-warning" runat="server" />
 
          </div>
          <div class ="form-group">
                                 <h4 style="color:white;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align:left;" >Other Contractor's Mail</h4>      
-<asp:TextBox id="inputEmail2" runat="server" CssClass="content" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
+<asp:TextBox id="inputEmail2" runat="server" class="form-control" MaxLength="100"  style="height: 35px; width: 800px; color: white; background-color: black " />
          </div>
 
 
          <label hidden id="label_error" runat="server" text="error"> </label>
 
-        <div class ="form-group">
-            <asp:Button ID="button_show" class="btn btn-default" runat="server"  Text="Pictures" OnClick="getImages" />
-        </div>
+        
 
         <asp:GridView ID="gvImages" runat="server" AutoGenerateColumns="false">
             <Columns>
@@ -201,9 +205,9 @@ body {
         </asp:GridView>
       
         <div  style="text-align: left; width: 100%;">
-            <asp:Button ID="Review" class="btn btn-large btn-success" runat="server" Text="Send your Review" OnClick="Review_Submit"/>
+            <asp:Button ID="Review" class=" col-md-2 btn btn-large btn-success" runat="server" Text="Send your Review" OnClick="Review_Submit"/>
 
-              <button class="btn btn-large btn-danger" type="button" onclick=history.go(-1)> Cancel </button>
+              <button class="col-md-1 btn btn-large btn-danger" type="button" onclick=history.go(-1)> Cancel </button>
         </div>
             
     </div>

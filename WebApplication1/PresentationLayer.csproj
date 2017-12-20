@@ -152,6 +152,7 @@
     <Content Include="ListCategories.aspx" />
     <Content Include="ListUserData.aspx" />
     <Content Include="ListUsers.aspx" />
+    <Content Include="ListVerifications.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Logout.aspx" />
     <Content Include="Reviews.aspx" />
@@ -258,6 +259,13 @@
     </Compile>
     <Compile Include="ListUsers.aspx.designer.cs">
       <DependentUpon>ListUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ListVerifications.aspx.cs">
+      <DependentUpon>ListVerifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ListVerifications.aspx.designer.cs">
+      <DependentUpon>ListVerifications.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>

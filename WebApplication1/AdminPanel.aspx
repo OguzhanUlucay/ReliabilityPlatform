@@ -22,12 +22,12 @@
 <div class="btn-group-vertical">
   
     <div class="col-md text-center"> 
-            <asp:Button ID="ListAllUsers" class="btn btn-large btn-success" runat="server" Text="List and Edit All Users" OnClick="ListUsers" />
-                <asp:Button ID="ListAllAdress" class="btn btn-large btn-warning" runat="server" Text="List and Edit All Adress" OnClick="ListAllAddress" />
-                <asp:Button ID="ListCategories" class="btn btn-large btn-success" runat="server" Text="List All Categories" OnClick="ListCategoriess" />
-                <asp:Button ID="ListReviews" class="btn btn-large btn-warning" runat="server" Text="List and Edit All Reviews" OnClick="ListReviewss" />
-                <asp:Button ID="ListAllSessions" class="btn btn-large btn-success" runat="server" Text="List All UserData(Email and psw)" OnClick="ListUserData" />
-	             <asp:Button ID="ListAllVerifications" class="btn btn-large btn-warning" runat="server"  Text="List and Edit All Verifications" OnClick="ListAllVerificationss"/>
+            <asp:Button ID="ListAllUsers" class="btn btn-large btn-primary" runat="server" Text="List and Edit All Users" OnClick="ListUsers" />
+                <asp:Button ID="ListAllAdress" class="btn btn-large btn-primary" runat="server" Text="List and Edit All Adress" OnClick="ListAllAddress" />
+                <asp:Button ID="ListCategories" class="btn btn-large btn-primary" runat="server" Text="List All Categories" OnClick="ListCategoriess" />
+                <asp:Button ID="ListReviews" class="btn btn-large btn-primary" runat="server" Text="List and Edit All Reviews" OnClick="ListReviewss" />
+                <asp:Button ID="ListAllSessions" class="btn btn-large btn-primary" runat="server" Text="List All UserData(Email and psw)" OnClick="ListUserData" />
+	             <asp:Button ID="ListAllVerifications" class="btn btn-large btn-primary" runat="server"  Text="List and Edit All Verifications" OnClick="ListAllVerificationss"/>
 </div>
          
    

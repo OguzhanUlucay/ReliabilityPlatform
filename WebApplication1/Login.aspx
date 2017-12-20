@@ -29,13 +29,13 @@
 
                                     <div class="row form-group">
 
-                                        <label class="col-md-2 control-label" for="mobile">E-mail</label>
-                                        <div class="col-md-3">
+                                        <label class="col-md-2 control-label" for="TextBoxEmail">E-mail</label>
+                                        <div class="col-md-9">
                                             <div class="input-group">
                                                 <span class="input-group-addon">
                                                     <i class="glyphicon glyphicon-user"></i>
                                                 </span>
-                                                <asp:TextBox ID="TextBoxEmail" runat="server"></asp:TextBox>
+                                                <asp:TextBox ID="TextBoxEmail" class ="form-control" runat="server"></asp:TextBox>
 
                                             </div>
                                         </div>
@@ -45,13 +45,13 @@
 
                                     <div class="row form-group">
 
-                                        <label class="col-md-2 control-label" for="mobile">Password</label>
-                                        <div class="col-md-3">
+                                        <label class="col-md-2 control-label" for="TextBoxPassword">Password</label>
+                                        <div class="col-md-9">
                                             <div class="input-group">
                                                 <span class="input-group-addon">
                                                     <i class="glyphicon glyphicon-user"></i>
                                                 </span>
-                                                <asp:TextBox ID="TextBoxPassword" runat="server"></asp:TextBox>
+                                                <asp:TextBox ID="TextBoxPassword"  class ="form-control" runat="server"></asp:TextBox>
 
                                             </div>
                                         </div>
@@ -62,10 +62,14 @@
 
 
 
-                                    <div class="form-group text-center">
-                                        <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
-                                        <label for="remember">Remember Me</label>
+                                    <div class="row form-group">
+                                        <label class="col-md-3  text-left" for="remember" >Remember Me</label>
+                                        
+                                        <div class ="col-md-2">
+                                            <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                                        </div>
                                     </div>
+
                                     <div class="form-group">
                                         <div class="row">
                                             <div class="col-md-8 text-center">
