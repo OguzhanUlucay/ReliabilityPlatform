@@ -75,7 +75,9 @@
             <li class="list-group-item"><%#Eval("zip_code")%></li>
 
                 </td>
+               <tr>
 
+            </tr>
 
         </ItemTemplate>
         <FooterTemplate>

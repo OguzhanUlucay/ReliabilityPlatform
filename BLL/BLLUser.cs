@@ -32,6 +32,11 @@ namespace BLL
         {
             return FUser.SelectUserData();
         }
+        public static DataTable SelectVerifications()
+        {
+            return FUser.SelectVerifications();
+        }
+
         public static string Insert(EUser user)
         {
             String[] errorMessages = new String[100];

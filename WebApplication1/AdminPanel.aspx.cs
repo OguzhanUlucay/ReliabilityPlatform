@@ -16,6 +16,10 @@ public partial class AdminPanel : System.Web.UI.Page
         {
            
         }
+        else
+        {
+            Response.Redirect("Login.aspx");
+        }
        
     }
     protected void ListUsers(object sender, EventArgs e)
@@ -62,7 +66,7 @@ public partial class AdminPanel : System.Web.UI.Page
     {
         if (Session["email"] != null)
         {
-
+            Response.Redirect("ListVerifications.aspx");
         }
 
     }

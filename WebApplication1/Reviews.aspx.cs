@@ -136,7 +136,17 @@ public partial class Reviews : System.Web.UI.Page
             try
             {
                 string warning;
-                warning = BLLUser.InsertImage(new EImage { image = pic, name = filename });
+                int user_id = 0;
+
+                if (reviewed_by == 0)
+                {
+                    user_id = buyer_id;
+                }
+                else
+                {
+                    user_id = seller_id;
+                }
+                warning = BLLUser.InsertImage(new EImage { image = pic, name = filename, user_id = user_id });
 
             }
             catch (Exception ex)

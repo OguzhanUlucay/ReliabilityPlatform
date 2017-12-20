@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using MySql.Data.MySqlClient;
-
+using System.Data;
 
 public partial class HomePage : System.Web.UI.Page
     {
@@ -13,30 +13,86 @@ public partial class HomePage : System.Web.UI.Page
         {
         if (Session["email"] != null)
         {
-            
+
+
+         
         }
         //bu kısma full yorumlar eklenecek.
         MySql.Data.MySqlClient.MySqlConnection Con = new MySql.Data.MySqlClient.MySqlConnection("server=localhost;database=mydb;uid=root; password=Berkay35.");
         Con.Open();
         MySqlCommand cmd = new MySqlCommand();
         cmd.Connection = Con;
-        cmd.CommandText = "select title from reviews_and_ratings where review_id = 1";
+        cmd.CommandType = CommandType.StoredProcedure;
+
+        cmd.CommandText = "titleList";
+        cmd.Parameters.AddWithValue("Preview_id", 1);
         var queryResult = cmd.ExecuteScalar();
         String title1 = Convert.ToString(queryResult);
         titleHeader.InnerHtml = title1;
-        cmd.CommandText = "select description from reviews_and_ratings where review_id = 1";
+
+        cmd.Parameters.RemoveAt("Preview_id");
+
+        cmd.CommandText = "descriptionList";
+        cmd.Parameters.AddWithValue("Preview_id", 1);
         queryResult = cmd.ExecuteScalar();
         String desc1 = Convert.ToString(queryResult);
         myHeader.InnerHtml = desc1;
 
-        cmd.CommandText = "select title from reviews_and_ratings where review_id = 2";
+        cmd.Parameters.RemoveAt("Preview_id");
+
+        cmd.CommandText = "titleList";
+        cmd.Parameters.AddWithValue("Preview_id", 2);
         queryResult = cmd.ExecuteScalar();
         String title2 = Convert.ToString(queryResult);
         titleHeader2.InnerHtml = title2;
-        cmd.CommandText = "select description from reviews_and_ratings where review_id = 2";
+
+        cmd.Parameters.RemoveAt("Preview_id");
+
+        cmd.CommandText = "descriptionList";
+        cmd.Parameters.AddWithValue("Preview_id", 2);
         queryResult = cmd.ExecuteScalar();
         String desc2 = Convert.ToString(queryResult);
         myHeader2.InnerHtml = desc2;
+
+        //
+        cmd.Parameters.RemoveAt("Preview_id");
+
+        cmd.CommandText = "titleList";
+        cmd.Parameters.AddWithValue("Preview_id", 9);
+         queryResult = cmd.ExecuteScalar();
+         title1 = Convert.ToString(queryResult);
+        titleHeader3.InnerHtml = title1;
+
+        cmd.Parameters.RemoveAt("Preview_id");
+
+        cmd.CommandText = "descriptionList";
+        cmd.Parameters.AddWithValue("Preview_id", 9);
+        queryResult = cmd.ExecuteScalar();
+         desc1 = Convert.ToString(queryResult);
+        myHeader3.InnerHtml = desc1;
+
+        cmd.Parameters.RemoveAt("Preview_id");
+
+        cmd.CommandText = "titleList";
+        cmd.Parameters.AddWithValue("Preview_id", 4);
+        queryResult = cmd.ExecuteScalar();
+        title1 = Convert.ToString(queryResult);
+        titleHeader4.InnerHtml = title1;
+
+        cmd.Parameters.RemoveAt("Preview_id");
+
+        cmd.CommandText = "descriptionList";
+        cmd.Parameters.AddWithValue("Preview_id", 4);
+        queryResult = cmd.ExecuteScalar();
+        desc1 = Convert.ToString(queryResult);
+        myHeader4.InnerHtml = desc1;
+
+
+
+
+
+
+
 
 
     }

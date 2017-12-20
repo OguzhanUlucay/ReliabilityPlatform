@@ -17,9 +17,10 @@
        
           <div id="edit_farmer" style="display:none"></div>
 
-          <div class="row">
-            <div class="col-md-2 panel panel-heading">Contact Information</div>
-            <div class="col-md-4 panel panel-heading" style="display:none; color:red" id="contact_error"></div>
+         
+
+           <div class="alert alert-secondary panel " role="alert">
+                 <p class="text-md-left"> Contact Information </p>
           </div>
               <script>
                    function show(x)
@@ -35,13 +36,25 @@
                </script>
     <div class="jumbotron">
 
-                  <div class="row form-group">
-            <label class="col-md-2 control-label" for="registration_type">Registration Type</label>
+            <div class="row form-group">
+               <label class="col-md-2 control-label" for="registration_type">Registration Type</label>
+              
+               <div class="form-check">
+                <label class="form-check-label">
 
-             <input type="radio" name="rad1" onclick="show(0)" checked value="NormalUser " id="NormalUser " > Enterprise User
+                   <input type="radio" class="form-check-input" name="rad1" onclick="show(0)" checked value="NormalUser " id="NormalUser " > Enterprise User
+                </label>
+               </div>
 
-            <input type="radio"  name="rad1" onclick="show(1)" value="EnterpriseUser" id="EnterpriseUser"  >Normal User(Non-Business)
-             
+               <div class="form-check">
+                <label class="form-check-label">
+
+                   <input type="radio" class="form-check-input"  name="rad1" onclick="show(1)" value="EnterpriseUser" id="EnterpriseUser"  >Normal User(Non-Business)
+                </label>
+               
+               </div>
+               
+
 
 
           
@@ -49,34 +62,32 @@
       
              
             
-                     <div class="row form-group">
+           <div class="row form-group">
 
-            <label class="col-md-2 control-label" for="mobile">Phone</label>
-            <div class="col-md-3">
-    <div class="input-group">
-			<span class="input-group-addon">
-			<i class="glyphicon glyphicon-phone"></i>
-			</span>
-                    <asp:TextBox ID="TextBoxUserPhone" runat="server"></asp:TextBox>
+                <label class="col-md-2 control-label" for="mobile">Phone</label>
+                <div class="col-md-9">
+        <div class="input-group">
+			    <span class="input-group-addon">
+			    <i class="glyphicon glyphicon-phone"></i>
+			    </span>
+                        <asp:TextBox ID="TextBoxUserPhone" class ="form-control"  runat="server"></asp:TextBox>
 		
-            </div>
-	</div>
-        
+                </div>
+	    </div>
             
           </div>
-      <div class="row form-group">
-            <div class="col-md-8" id="mobile_numbers"></div>
-          </div>
+
+     
 
                    <div class="row form-group">
 
             <label class="col-md-2 control-label" for="first_name">First Name</label>  
-            <div class="col-md-2">
+            <div class="col-md-9">
 			<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon-user"></i>
 			</span>
-                <asp:TextBox ID="TextBoxUserName" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBoxUserName" class ="form-control"  runat="server"></asp:TextBox>
             </div></div>
 
                         </div>
@@ -84,12 +95,12 @@
                           <div class="row form-group">
 
             <label class="col-md-2 control-label" for="last_name">Last Name</label>  
-            <div class="col-md-2">
+            <div class="col-md-9">
 			<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon-user"></i>
 			</span>
-                <asp:TextBox ID="TextBoxUserSurname" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBoxUserSurname" class ="form-control"  runat="server"></asp:TextBox>
             </div>
 	</div>
                           </div>
@@ -98,12 +109,12 @@
                           <div class="row form-group">
 
             <label class="col-md-2 control-label" for="Email">E-mail</label>  
-            <div class="col-md-2">
+            <div class="col-md-9">
 			<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon-user"></i>
 			</span>
-                <asp:TextBox ID="TextBoxEmail" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBoxEmail" class ="form-control"  runat="server"></asp:TextBox>
             </div>
 	</div>
                           </div>
@@ -112,12 +123,12 @@
                         <div class="row form-group">
 
                 <label class="col-md-2 control-label" for="SSN">SSN</label>  
-            <div class="col-md-2">
+            <div class="col-md-9">
 			<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon-user"></i>
 			</span>
-                <asp:TextBox ID="TextBoxUserSSN" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TextBoxUserSSN" class ="form-control"  runat="server"></asp:TextBox>
             </div>
                  
             </div>
@@ -127,38 +138,37 @@
                         <div class="row form-group">
 
                 <label class="col-md-2 control-label" for="Password">Password</label>  
-            <div class="col-md-2">
+            <div class="col-md-9">
 			<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon-user"></i>
 			</span>
-                     <asp:TextBox ID="TextBoxPassword" type="password" runat="server"></asp:TextBox>
+                     <asp:TextBox ID="TextBoxPassword" class ="form-control"  runat="server"></asp:TextBox>
 
             </div>
                  
             </div>
                                       </div>
 
-                                  <div class="">
+            <div class="">
 
                 <asp:Label ID="LabelWarning" runat="server" Text=""></asp:Label>
 
             </div>     
 
 
-                     <div class="row">
-            <div class="col-md-2 panel panel-heading">Birthdate Information</div>
-            <div class="col-md-4 panel panel-heading" style="display:none; color:red" id="address_error"></div>
+              <div class="alert alert-info" role="alert">
+                 <p class="text-md-left"> Birthdate Information </p>
           </div>
 
            <div class="row form-group">
            <label class="col-md-2 control-label" for="Birthdate">Birthdate</label>  
-           <div class="col-md-2">
+           <div class="col-md-9">
 			<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon-user"></i>
 			</span>
-                 <asp:TextBox ID="TextBoxUserBirthDate" type="date" runat="server"></asp:TextBox>
+                 <asp:TextBox ID="TextBoxUserBirthDate" class ="form-control" type="date" runat="server"></asp:TextBox>
             </div>
 	        </div>
           </div>
@@ -177,32 +187,33 @@
 
               <div id="show">
 
-                  <div class="row">
-            <div class="col-md-2 panel panel-heading">Business Information</div>
-            <div class="col-md-4 panel panel-heading" style="display:none; color:red" id="address_error"></div>
-          </div>
+                  
+
+             <div class="alert alert-info" role="alert">
+                 <p class="text-md-left"> Business Information </p>
+             </div>
               
 
         <div class="row form-group">
             <label class="col-md-2 control-label" for="TaxNumber">Tax Number</label>
-            <div class="col-md-2">
+            <div class="col-md-9">
 		<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon"></i>
 			</span>
-                                <asp:TextBox ID="TextBoxTaxNumber" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="TextBoxTaxNumber" class ="form-control" runat="server"></asp:TextBox>
 
             </div> </div>
                         </div>
 
                   <div class="row form-group">
             <label class="col-md-2 control-label" for="CorporationTitle">CorporationTitle</label>
-            <div class="col-md-2">
+            <div class="col-md-9">
 		<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon"></i>
 			</span>
-                                <asp:TextBox ID="TextBoxCorporationTitle" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="TextBoxCorporationTitle" class ="form-control" runat="server"></asp:TextBox>
 
             </div> </div>
                         </div>
@@ -210,21 +221,21 @@
 
             
                 
-      
 
-          <div class="row">
-            <div class="col-md-2 panel panel-heading">Address Information</div>
-            <div class="col-md-4 panel panel-heading" style="display:none; color:red" id="address_error"></div>
+          <div class="alert alert-info" role="alert">
+                 <p class="text-md-left">Address Information </p>
           </div>
+
+
 
           <div class="row form-group">
             <label class="col-md-2 control-label" for="City">City</label>
-            <div class="col-md-2">
+            <div class="col-md-9">
 		<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon-home"></i>
 			</span>
-                                <asp:TextBox ID="TextBoxCity" runat="server"></asp:TextBox>
+                                <asp:TextBox ID="TextBoxCity" class ="form-control" runat="server"></asp:TextBox>
 
             </div> </div>
                         </div>
@@ -232,26 +243,26 @@
                         <div class="row form-group">
 
             <label class="col-md-2 control-label" for="state">District</label>
-            <div class="col-md-2">
+            <div class="col-md-9">
 		<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon-list"></i>
 			</span>
 
-                    <asp:TextBox ID="TextBoxDistrict" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxDistrict" class ="form-control" runat="server"></asp:TextBox>
             </div></div>
                                     </div>
 
                                       <div class="row form-group">
 
             <label class="col-md-2 control-label" for="district">Neighbourhood</label>
-            <div class="col-md-2">
+            <div class="col-md-9">
 		<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon-list"></i>
 			</span>
 
-                    <asp:TextBox ID="TextBoxNeighbourhood" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxNeighbourhood" class ="form-control" runat="server"></asp:TextBox>
             </div>
 		</div>
                                     </div>
@@ -259,13 +270,13 @@
           <div class="row form-group">
            
                 <label class="col-md-2 control-label" for="district">Building Name</label>
-            <div class="col-md-2">
+            <div class="col-md-9">
 		<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon-list"></i>
 			</span>
 
-                    <asp:TextBox ID="TextBoxBuildingName" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxBuildingName" class ="form-control"  runat="server"></asp:TextBox>
             </div>
 		</div>
 
@@ -274,13 +285,13 @@
           <div class="row form-group">
           
               <label class="col-md-2 control-label" for="district">Zip Code</label>
-            <div class="col-md-2">
+            <div class="col-md-9">
 		<div class="input-group">
 			<span class="input-group-addon">
 			<i class="glyphicon glyphicon-home"></i>
 			</span>
 
-                    <asp:TextBox ID="TextBoxZipCode" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="TextBoxZipCode" class ="form-control" runat="server"></asp:TextBox>
             </div>
 		</div>
             

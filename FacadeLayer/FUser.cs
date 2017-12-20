@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using EntityLayer;
 using System.Data;
 using MySql.Data.MySqlClient;
+using System.IO;
+using System.Drawing;
 
 namespace FacadeLayer
 {
@@ -38,6 +40,42 @@ namespace FacadeLayer
             DataTable dtSelect = new DataTable();
             adptr.Fill(dtSelect);
             return dtSelect;
+        }
+        public static DataTable SelectVerifications()
+        {
+            //sorgular
+           
+            //byte[] toBytes;
+           
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = Connection.Con;
+            // change this.
+            cmd.CommandText = "verifications_and_images"; //stored procedure as user.
+            cmd.CommandType = CommandType.StoredProcedure;
+            MySqlDataAdapter adptr = new MySqlDataAdapter();
+            adptr.SelectCommand = cmd;
+            DataTable dtSelect = new DataTable();
+            //var result=dtSelect.Rows;
+            //var result_image = result[0][7];
+           /* foreach (DataRow row in dtSelect.Rows)
+            {
+                string temp = row["image"].ToString();
+                toBytes = Encoding.ASCII.GetBytes(temp);
+
+
+            }
+             result = byteArrayToImage(Convert.ToByteArray(result_image));
+             byte[] image = Convert.ToByte(dtSelect.Rows[0]["image"]);
+             */
+            adptr.Fill(dtSelect);
+            return dtSelect;
+        }
+        public Image byteArrayToImage(byte[] imgBytes)
+        {
+            using (MemoryStream imgStream = new MemoryStream(imgBytes))
+            {
+                return Image.FromStream(imgStream);
+            }
         }
         public static DataTable SelectUserData()
         {
@@ -86,7 +124,6 @@ namespace FacadeLayer
 
             MySqlCommand cmd = new MySqlCommand("insert_user", Connection.Con); 
             cmd.CommandType = CommandType.StoredProcedure;
-
             cmd.Parameters.Add(new MySqlParameter("Pname", user.name));
             cmd.Parameters.Add(new MySqlParameter("Psurname", user.surname));
             cmd.Parameters.Add(new MySqlParameter("Pssn", user.ssn));
@@ -110,7 +147,6 @@ namespace FacadeLayer
 
            
             var queryResult = cmdTemp.ExecuteScalar();
-            
             int adress_id = Convert.ToInt32(queryResult) + 1;
 
             
